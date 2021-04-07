@@ -1,4 +1,4 @@
-# Flipcoin Mininum Counter
+# Flipcoin Minimum Counter
 
 ## Function
 > Counts the number of flip needed in order to produce the correct iterative sequence.
