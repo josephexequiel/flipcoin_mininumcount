@@ -1,5 +1,3 @@
-A = [1, 0, 1, 1, 1, 0, 1];
-
 def looper(baseval, tempval):
     if baseval == 0:
         if tempval == 1:
@@ -43,5 +41,12 @@ def solution(A):
         finaloutput = dataset2;
     print("Minimum Flip Needed: ", finaloutput);
     return finaloutput;
-    
+
+A = [1, 1, 1, 1, 1, 1, 1];    
+solution(A);
+A = [1, 0, 1, 1, 1, 1, 1];    
+solution(A);
+A = [1, 1, 0, 0, 0, 1, 1];    
+solution(A);
+A = [0, 1, 1, 1, 1, 1, 0];    
 solution(A);
