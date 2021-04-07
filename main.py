@@ -1,4 +1,4 @@
-A = [1, 0, 1, 0, 1, 0, 1];
+A = [1, 0, 1, 0, 1, 1, 1];
 
 def looper(baseval, tempval):
     if baseval == 0:
@@ -18,7 +18,9 @@ def solution(A):
     i = 0;
     count = 0;
     baseval = A[0];
+    #print("Iteration:");
     while i < len(A):
+        #print(baseval, A[i])
         if looper(baseval, A[i]) == False:
             count = count + 1;
             if baseval == 0:
@@ -28,6 +30,7 @@ def solution(A):
         else:
             baseval = A[i];
         i = i + 1;
+    #print("Minimum Flip Count: ", len(A) - count);
     print(len(A) - count);
 
 solution(A);
