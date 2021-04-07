@@ -1,4 +1,4 @@
-A = [0, 0, 1, 0, 1, 1, 1];
+A = [1, 0, 1, 1, 1, 0, 1];
 
 def looper(baseval, tempval):
     if baseval == 0:
@@ -34,9 +34,9 @@ def countflip(A):
     return result;
 
 def solution(A):
-    dataset1 = countflip(A)
-    A.reverse()
-    dataset2 = countflip(A)
+    dataset1 = countflip(A);
+    A.reverse();
+    dataset2 = countflip(A);
     if dataset1 < dataset2:
         finaloutput = dataset1;
     else:
