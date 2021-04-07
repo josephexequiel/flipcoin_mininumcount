@@ -18,7 +18,7 @@ def countflip(A):
     baseval = A[0];
     #print("Iteration:");
     while i < len(A):
-        #print(baseval, A[i])
+        #print(baseval, A[i]);
         if looper(baseval, A[i]) == False:
             count = count + 1;
             if baseval == 0:
@@ -42,11 +42,11 @@ def solution(A):
     print("Minimum Flip Needed: ", finaloutput);
     return finaloutput;
 
-A = [1, 1, 1, 1, 1, 1, 1];    
+A = [1, 1, 1, 1, 1, 1, 1];
 solution(A);
-A = [1, 0, 1, 1, 1, 1, 1];    
+A = [1, 0, 1, 1, 1, 1, 1];
 solution(A);
-A = [1, 1, 0, 0, 0, 1, 1];    
+A = [1, 1, 0, 0, 0, 1, 1];
 solution(A);
-A = [0, 1, 1, 1, 1, 1, 0];    
+A = [0, 1, 1, 1, 1, 1, 0];
 solution(A);
