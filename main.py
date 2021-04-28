@@ -16,9 +16,9 @@ def countflip(A):
     i = 0;
     count = 0;
     baseval = A[0];
-    #print("Iteration:");
+    print("Iteration:");
     while i < len(A):
-        #print(baseval, A[i]);
+        print(baseval, A[i]);
         if looper(baseval, A[i]) == False:
             count = count + 1;
             if baseval == 0:
@@ -28,20 +28,20 @@ def countflip(A):
         else:
             baseval = A[i];
         i = i + 1;
-    result = len(A) - count;
+    dataset1 = len(A) - count;
+    if dataset1 < count:
+        result = dataset1;
+    else:
+        result = count;
     return result;
 
 def solution(A):
-    dataset1 = countflip(A);
-    A.reverse();
-    dataset2 = countflip(A);
-    if dataset1 < dataset2:
-        finaloutput = dataset1;
-    else:
-        finaloutput = dataset2;
+    finaloutput = countflip(A);
     print("Minimum Flip Needed: ", finaloutput);
     return finaloutput;
 
+A = [1, 1, 0, 1, 1];
+solution(A);
 A = [1, 1, 1, 1, 1, 1, 1];
 solution(A);
 A = [1, 0, 1, 1, 1, 1, 1];
