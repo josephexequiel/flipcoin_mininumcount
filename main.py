@@ -21,7 +21,7 @@ def fliparray(A):
         else:
             templist.append(0);
         i = i + 1;
-    return templist
+    return templist;
 
 def countflip(A):
     i = 0;
@@ -52,7 +52,7 @@ def countflip(A):
     return result;
 
 def solution(A):
-    print("Original Array:", A)
+    print("Original Array:", A);
     finaloutput = countflip(A);
     print("Minimum Flip Needed: ", finaloutput, "\n");
     return finaloutput;
