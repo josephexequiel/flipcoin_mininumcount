@@ -54,7 +54,7 @@ def countflip(A):
 def solution(A):
     print("Original Array:", A)
     finaloutput = countflip(A);
-    print("Minimum Flip Needed: ", finaloutput);
+    print("Minimum Flip Needed: ", finaloutput, "\n");
     return finaloutput;
 
 A = [1, 1, 0, 1, 1];
